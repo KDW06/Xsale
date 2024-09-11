@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Xsale|{% block title %} {% endblock  %}</title>     
+     </head>
+    <body>
+        <h1>Website with django| KDW06</h1>
+<hr>
+<ul>
+    <li>
+        <a href="/createUser "> Create user </a>
+    </li>
+    <li>
+        <a href="/page"> Page</a>
+    </li>
+
+    <li>
+        <a href="/contact"> Contact</a>
+    </li>
+    <li>
+        <a href="/" > Index</a>
+    </li>
+</ul>
+<hr/>
+    
+    <div id="content"> <!--dinamic info comming from templates-->
+        {% block content %}
+        
+        {% endblock  %} 
+    </div>
+
+    <footer>Xsale &copy; KDW06</footer>
+
+
+    </body>
+</html>
