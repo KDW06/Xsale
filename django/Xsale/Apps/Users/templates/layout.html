@@ -7,26 +7,36 @@
         <link rel="stylesheet" href="{% static 'css/styles.css' %}" />
      </head>
     <body>
-        <h1>Xsale with django| KDW06</h1>
-<hr>
-<ul>
-    <li>
-        <a href="/createUser "> Create user </a>
-    </li>
-    <li>
-        <a href="/page"> Page</a>
-    </li>
 
-    <li>
-        <a href="/contact"> Contact</a>
-    </li>
-    <li>
-        <a href="/" > Index</a>
-    </li>
-</ul>
-<hr/>
+        <header> 
+            <div id="logo">
+                <img src="{%static 'images/logo.png'%}"/> 
+                <h1>Xsale with Django| KDW06</h1>
+            </div>
+            
+        </header>
+
+        
+    <nav>
+        <ul>
+        <li>
+            <a href="/createUser "> Create user </a>
+        </li>
+        <li>
+            <a href="/page"> Page</a>
+        </li>
+    
+        <li>
+            <a href="/contact"> Contact</a>
+        </li>
+        <li>
+            <a href="/" > Index</a>
+        </li>
+        </ul>
+    </nav>
     
     <div id="content"> <!--dinamic info comming from templates-->
+        <h2 class="title">Test title</h2>
         {% block content %}
         
         {% endblock  %} 
